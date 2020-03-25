@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/g5search/messages/blob/master/content/archives/v1/achive-available.json",
+  "title": "Archive Available",
+  "description": "A new archive of a website has been saved to Google Cloud Storage",
+  "type": "object",
+  "properties": {
+    "clw_name": {
+      "description": "the name of the CLW that was archived",
+      "type": "string"
+    },
+    "sha": {
+      "description": "the full SHA that was archived",
+      "type": "string"
+    },
+    "gcs_path": {
+      "description": "the path to download the archive from Google Cloud Storage",
+      "type": "string"
+    }
+  },
+  "required": [
+    "clw_name",
+    "sha",
+    "gcs_path"
+  ]
+}

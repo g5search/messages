@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/g5search/messages/blob/master/content/commits/v1/commit-available.json",
+  "title": "Commit Available",
+  "description": "A new commit has been made to the git repository for a website",
+  "type": "object",
+  "properties": {
+    "clw_name": {
+      "description": "the name of the CLW that was committed",
+      "type": "string"
+    },
+    "published_at": {
+      "description": "the timestamp of when the site was published",
+      "type": "string",
+      "format": "date-time"
+    },
+    "repo_url": {
+      "description": "the git URL of the repo",
+      "type": "string"
+    },
+    "sha": {
+      "description": "the full SHA of the commit",
+      "type": "string"
+    }
+  },
+  "required": [
+    "clw_name",
+    "published_at",
+    "repo_url",
+    "sha"
+  ]
+}

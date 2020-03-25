@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/g5search/messages/blob/master/content/publish-requests/v1/publish-requested.json",
+  "title": "Publish Requested",
+  "description": "An archive should be published for a website",
+  "type": "object",
+  "properties": {
+    "clw_name": {
+      "description": "the name of the CLW to publish",
+      "type": "string"
+    },
+    "published_at": {
+      "description": "the timestamp of when the site was published",
+      "type": "string",
+      "format": "date-time"
+    },
+    "gcs_path": {
+      "description": "the path to download the archive from Google Cloud Storage",
+      "type": "string"
+    },
+    "sha": {
+      "description": "the full SHA that is being published",
+      "type": "string"
+    },
+    "domains": {
+      "description": "a list of domains that are pointed at the CLW",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "clw_name",
+    "published_at",
+    "gcs_path",
+    "sha",
+    "domains"
+  ]
+}
