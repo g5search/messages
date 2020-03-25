@@ -97,7 +97,7 @@
           "type": "string"
         },
         "city": {
-          "type": "string",
+          "type": "string"
         },
         "state": {
           "type": "string"
