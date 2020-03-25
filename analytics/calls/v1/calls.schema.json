@@ -24,19 +24,13 @@
           "type": "string"
         },
         "ga_client_id": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "cpm_pool_cpm_code": {
           "type": "string"
         },
         "cpm_pool_marketing_source": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "created_at": {
           "type": [
@@ -45,22 +39,13 @@
           ]
         },
         "source": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "medium": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "description": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "tracking_purpose": {
           "type": "string"
@@ -89,22 +74,13 @@
           "type": "string"
         },
         "city": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "state": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "postal_code": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         }
       },
       "required": [
@@ -118,28 +94,16 @@
           "type": "string"
         },
         "domain_type": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "city": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string",
         },
         "state": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "postal_code": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         }
       },
       "required": [
