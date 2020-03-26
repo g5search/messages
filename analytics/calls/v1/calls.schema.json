@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://github.com/g5search/messages/blob/master/analytics/calls/v1/calls.schema.json",
   "type": "object",
   "description": "Call payload",
@@ -15,10 +14,12 @@
       "type": "object",
       "properties": {
         "call_event_urn": {
-          "type": "string"
+          "type": "string",
+          "description": "call event unique identifier"
         },
         "location_urn": {
-          "type": "string"
+          "type": "string",
+          "description": "location unique identifier"
         },
         "category": {
           "type": "string"
@@ -33,10 +34,8 @@
           "type": "string"
         },
         "created_at": {
-          "type": [
-            "string",
-            "any"
-          ]
+          "type": "string",
+          "format": "date-time"
         },
         "source": {
           "type": "string"
