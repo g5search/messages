@@ -1,0 +1,45 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/analytics/attributables/v1/attributables-html-form.schema.json",
+  "type": "object",
+  "description": "HTML Form Attributable payload",
+  "required": [
+    "attributable_type",
+    "external_id",
+    "external_source",
+    "source_category",
+    "source_event_at",
+    "location_urn"
+  ],
+  "properties": {
+    "attributable_type": {
+      "type": "string",
+      "enum": [
+        "ClsHtmlFormAttributable"
+      ]
+    },
+    "external_id": {
+      "type": "string",
+      "description": "Right now, this is the lead-uid"
+    },
+    "external_source": {
+      "type": "string",
+      "external_source": "Host name of CLS"
+    },
+    "source_category": {
+      "type": "string"
+    },
+    "source_event_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The time of the attributable"
+    },
+    "location_urn": {
+      "type": "string",
+      "description": "Unique ID for location"
+    },
+    "ga_client_id": {
+      "type": "string",
+      "description": "GA Client ID"
+    }
+  }
+}
