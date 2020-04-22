@@ -1,0 +1,24 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/analytics/emails/v1/emails.schema.json",
+  "type": "object",
+  "description": "Email payload",
+  "required": [
+    "marketing_source_urn",
+    "external_id",
+    "external_source"
+  ],
+  "properties": {
+    "attributable_type": {
+      "type": "string",
+      "description": "The marketing-source-urn assigned by g5-attributions to the provided external-id and external-source"
+    },
+    "external_id": {
+      "type": "string",
+      "description": "This is the ID provided buy CLS in 'attributables' payload"
+    },
+    "external_source": {
+      "type": "string",
+      "description": "This is the source provided buy CLS in 'attributables' payload"
+    }
+  }
+}

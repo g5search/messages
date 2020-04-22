@@ -4,7 +4,7 @@
   "description": "Representation of an HTML form",
   "required": [
     "urn",
-    "markup_uid",
+    "markup",
     "name",
     "all_clients",
     "created_at",
@@ -15,9 +15,9 @@
       "type": "string",
       "description": "The form URN"
     },
-    "markup_uid": {
+    "markup": {
       "type": "string",
-      "description": "The URL to the associated markup for the form"
+      "description": "The form markup"
     },
     "name": {
       "type": "string",
