@@ -1,0 +1,47 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/analytics/forms/v1/forms.schema.json",
+  "type": "object",
+  "description": "Representation of an HTML form",
+  "required": [
+    "urn",
+    "markup_uid",
+    "name",
+    "all_clients",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "urn": {
+      "type": "string",
+      "description": "The form URN"
+    },
+    "markup_uid": {
+      "type": "string",
+      "description": "The URL to the associated markup for the form"
+    },
+    "name": {
+      "type": "string",
+      "description": "The form name"
+    },
+    "description": {
+      "type": "string",
+      "description": "The form description"
+    },
+    "all_clients": {
+      "type": "boolean",
+      "description": "Is the form assigned to all clients?"
+    },
+    "client_urns": {
+      "type": "array",
+      "description": "List of client-urns assigned to form"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
