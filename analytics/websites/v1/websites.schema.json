@@ -1,0 +1,33 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/analytics/websites/v1/websites.schema.json",
+  "type": "object",
+  "description": "Website events",
+  "required": [
+    "repo_uri",
+    "domain",
+    "website_urn",
+    "owner_urn"
+  ],
+  "properties": {
+    "domain": {
+      "type": "string",
+      "description": "The website domain"
+    },
+    "website_urn": {
+      "type": "string",
+      "description": "The website URN"
+    },
+    "owner_urn": {
+      "type": "string",
+      "description": "The website's owner URN. It's the same as the website URN when it's not a single-domain client"
+    },
+    "repo_uri": {
+      "type": "string",
+      "description": "URI to the git repo"
+    },
+    "gcs_uri": {
+      "type": "string",
+      "description": "URI to google cloud storage"
+    }
+  }
+}
