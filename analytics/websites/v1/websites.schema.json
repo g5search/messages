@@ -3,12 +3,26 @@
   "type": "object",
   "description": "Website events",
   "required": [
-    "repo_uri",
+    "deploy_id",
+    "event",
     "domain",
-    "website_urn",
     "owner_urn"
   ],
   "properties": {
+    "event": {
+      "type": "string",
+      "enum": [
+        "repo-push-begin",
+        "repo-push-success",
+        "gcs-copy-begin",
+        "gcs-copy-success"
+      ],
+      "description": "We are reusing a 'websites' topic and the messages are differentiated by 'event'"
+    },
+    "deploy_id": {
+      "type": "string",
+      "description": "An ID that events can be grouped on"
+    },
     "domain": {
       "type": "string",
       "description": "The website domain"
@@ -17,9 +31,23 @@
       "type": "string",
       "description": "The website URN"
     },
+    "cms_urn": {
+      "type": "string",
+      "description": "When multi-domain, it's the website_urn. When single-domain, it's the client.website.urn"
+    },
+    "website_name": {
+      "type": "string",
+      "description": "The website name"
+    },
     "owner_urn": {
       "type": "string",
-      "description": "The website's owner URN. It's the same as the website URN when it's not a single-domain client"
+      "description": "The website's owner URN. It's either a client_urn or location_urn"
+    },
+    "location_urn": {
+      "type": "string"
+    },
+    "client_urn": {
+      "type": "string"
     },
     "repo_uri": {
       "type": "string",
@@ -28,6 +56,14 @@
     "gcs_uri": {
       "type": "string",
       "description": "URI to google cloud storage"
+    },
+    "cms_repo_dir": {
+      "type": "string",
+      "description": "The location of the CMS repo-dir. This directory automatically gets deleted by a nightly job"
+    },
+    "gcs_cp_command": {
+      "type": "string",
+      "description": "The Google Cloud Storage command executed to copy the contents of 'cms_repo_dir' to GCS"
     }
   }
 }
