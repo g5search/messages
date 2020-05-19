@@ -1,0 +1,32 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/analytics/blogs/v1/blogs.schema.json",
+  "type": "object",
+  "description": "Blog events",
+  "required": [
+    "cms_urn",
+    "deploy_id",
+    "repo_uri",
+    "location_urn",
+    "client_urn"
+  ],
+  "properties": {
+    "deploy_id": {
+      "type": "string",
+      "description": "An ID that events can be grouped on"
+    },
+    "cms_urn": {
+      "type": "string",
+      "description": "When multi-domain, it's the website_urn. When single-domain, it's the client.website.urn"
+    },
+    "location_urn": {
+      "type": "string"
+    },
+    "client_urn": {
+      "type": "string"
+    },
+    "repo_uri": {
+      "type": "string",
+      "description": "URI to the git repo"
+    }
+  }
+}
