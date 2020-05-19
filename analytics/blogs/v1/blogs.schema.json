@@ -3,6 +3,7 @@
   "type": "object",
   "description": "Blog events",
   "required": [
+    "event",
     "cms_urn",
     "deploy_id",
     "repo_uri",
@@ -10,6 +11,14 @@
     "client_urn"
   ],
   "properties": {
+    "event": {
+      "type": "string",
+      "enum": [
+        "blog-updated",
+        "blog-deleted"
+      ],
+      "description": "We are reusing a 'websites' topic and the messages are differentiated by 'event'"
+    },
     "deploy_id": {
       "type": "string",
       "description": "An ID that events can be grouped on"
