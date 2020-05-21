@@ -61,6 +61,14 @@
       "type": "string",
       "description": "URI to the git repo"
     },
+    "repo_name": {
+      "type": "string",
+      "description": "The repo name"
+    },
+    "repo_sha": {
+      "type": "string",
+      "description": "The associated commit SHA"
+    },
     "gcs_uri": {
       "type": "string",
       "description": "URI to google cloud storage"
@@ -72,6 +80,10 @@
     "gcs_cp_command": {
       "type": "string",
       "description": "The Google Cloud Storage command executed to copy the contents of 'cms_repo_dir' to GCS. Present in steps after repo-push-success"
+    },
+    "gcs_path": {
+      "type": "string",
+      "description": "Path to created GCS tar.gz"
     },
     "error_message": {
       "type": "string",
