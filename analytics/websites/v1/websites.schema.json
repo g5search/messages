@@ -15,13 +15,19 @@
         "repo-push-begin",
         "repo-push-success",
         "gcs-copy-begin",
-        "gcs-copy-success"
+        "gcs-copy-success",
+        "error"
       ],
       "description": "We are reusing a 'websites' topic and the messages are differentiated by 'event'"
     },
     "deploy_id": {
       "type": "string",
       "description": "An ID that events can be grouped on"
+    },
+    "deploy_timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Used to know if messages after repo-push-begin are out of order"
     },
     "domain": {
       "type": "string",
@@ -59,11 +65,19 @@
     },
     "cms_repo_dir": {
       "type": "string",
-      "description": "The location of the CMS repo-dir. This directory automatically gets deleted by a nightly job"
+      "description": "The location of the CMS repo-dir. This directory automatically gets deleted by a nightly job. Present in steps after repo-push-begin"
     },
     "gcs_cp_command": {
       "type": "string",
-      "description": "The Google Cloud Storage command executed to copy the contents of 'cms_repo_dir' to GCS"
+      "description": "The Google Cloud Storage command executed to copy the contents of 'cms_repo_dir' to GCS. Present in steps after repo-push-success"
+    },
+    "error_message": {
+      "type": "string",
+      "description": "Description of error, Present when error"
+    },
+    "error_on_step": {
+      "type": "string",
+      "description": "where the error occurred. Present when error"
     }
   }
 }
