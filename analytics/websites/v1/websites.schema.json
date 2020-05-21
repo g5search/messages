@@ -84,6 +84,10 @@
     "error_on_event": {
       "type": "string",
       "description": "where the error occurred. Present when error"
+    },
+    "linked_domains": {
+      "type": "array",
+      "description": "Domains linked from website-provisioner. Should be present from domain-provision-success"
     }
   }
 }
