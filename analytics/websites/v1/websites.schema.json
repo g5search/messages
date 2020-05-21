@@ -77,6 +77,10 @@
       "type": "string",
       "description": "Description of error, Present when error"
     },
+    "error_backtrace": {
+      "type": "string",
+      "description": "Backtrace of error, Present when error"
+    },
     "error_on_event": {
       "type": "string",
       "description": "where the error occurred. Present when error"
