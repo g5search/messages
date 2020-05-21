@@ -69,10 +69,6 @@
       "type": "string",
       "description": "The associated commit SHA"
     },
-    "gcs_uri": {
-      "type": "string",
-      "description": "URI to google cloud storage"
-    },
     "cms_repo_dir": {
       "type": "string",
       "description": "The location of the CMS repo-dir. This directory automatically gets deleted by a nightly job. Present in steps after repo-push-begin"
@@ -81,9 +77,9 @@
       "type": "string",
       "description": "The Google Cloud Storage command executed to copy the contents of 'cms_repo_dir' to GCS. Present in steps after repo-push-success"
     },
-    "gcs_path": {
+    "website_gcs_archive_uri": {
       "type": "string",
-      "description": "Path to created GCS tar.gz"
+      "description": "URI to compressed website file"
     },
     "error_message": {
       "type": "string",
