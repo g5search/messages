@@ -1,0 +1,44 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/analytics/websites/v1/websites-refresh.schema.json",
+  "type": "object",
+  "description": "Website Refresh message",
+  "required": [
+    "deploy_id",
+    "domain_names",
+    "cms_urn",
+    "website_gcs_archive_uri",
+    "repo_sha",
+    "deploy_timestamp"
+  ],
+  "properties": {
+    "deploy_id": {
+      "type": "string",
+      "description": "An ID that events can be grouped on"
+    },
+    "cms_urn": {
+      "type": "string",
+      "description": "When multi-domain, it's the website_urn. When single-domain, it's the client.website.urn"
+    },
+    "website_gcs_archive_uri": {
+      "type": "string",
+      "description": "URI to compressed website file"
+    },
+    "repo_sha": {
+      "type": "string",
+      "description": "The associated commit SHA"
+    },
+    "deploy_timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Used to know if messages after repo-push-begin are out of order"
+    },
+    "repo_uri": {
+      "type": "string",
+      "description": "URI to the git repo"
+    },
+    "repo_name": {
+      "type": "string",
+      "description": "The repo name"
+    }
+  }
+}
