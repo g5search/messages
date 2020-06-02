@@ -1,0 +1,24 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/analytics/websites/v1/websites-refreshed.schema.json",
+  "type": "object",
+  "description": "Website Refreshed message",
+  "required": [
+    "deploy_id",
+    "pod_id",
+    "pod_status"
+  ],
+  "properties": {
+    "deploy_id": {
+      "type": "string",
+      "description": "An ID that events can be grouped on"
+    },
+    "pod_id": {
+      "type": "string",
+      "description": "Uniquely identifies POD. Probably region/pod-name"
+    },
+    "pod_status": {
+      "type": "string",
+      "description": "Status of POD"
+    }
+  }
+}

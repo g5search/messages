@@ -1,7 +1,7 @@
 {
-  "$id": "https://github.com/g5search/messages/blob/master/analytics/websites/v1/websites-refresh.schema.json",
+  "$id": "https://github.com/g5search/messages/blob/master/analytics/websites/v1/websites-refresh-ready.schema.json",
   "type": "object",
-  "description": "Website Refresh message",
+  "description": "Website Refresh Ready message",
   "required": [
     "deploy_id",
     "domain_names",
