@@ -5,7 +5,8 @@
   "required": [
     "deploy_id",
     "pod_id",
-    "pod_status"
+    "pod_status",
+    "cms_urn"
   ],
   "properties": {
     "deploy_id": {
@@ -19,6 +20,10 @@
     "pod_status": {
       "type": "string",
       "description": "Status of POD"
+    },
+    "cms_urn": {
+      "type": "string",
+      "description": "When multi-domain, it's the website_urn. When single-domain, it's the client.website.urn"
     }
   }
 }
