@@ -4,9 +4,7 @@
   "description": "Website events",
   "required": [
     "deploy_id",
-    "event",
-    "domain",
-    "owner_urn"
+    "event"
   ],
   "properties": {
     "event": {
@@ -35,7 +33,7 @@
     },
     "domain": {
       "type": "string",
-      "description": "The website domain"
+      "description": "The website domain. Required for repo-push-[begin/success]"
     },
     "website_urn": {
       "type": "string",
@@ -51,7 +49,7 @@
     },
     "owner_urn": {
       "type": "string",
-      "description": "The website's owner URN. It's either a client_urn or location_urn"
+      "description": "The website's owner URN. It's either a client_urn or location_urn. Required for repo-push-[begin/success]"
     },
     "location_urn": {
       "type": "string"
