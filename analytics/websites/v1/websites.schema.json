@@ -18,6 +18,8 @@
         "domain-provision-success",
         "gcs-copy-begin",
         "gcs-copy-success",
+        "cdn-invalidate-cache-begin",
+        "cdn-invalidate-cache-end",
         "error"
       ],
       "description": "We are reusing a 'websites' topic and the messages are differentiated by 'event'"
