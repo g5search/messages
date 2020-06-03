@@ -98,6 +98,10 @@
     "linked_domains": {
       "type": "array",
       "description": "Domains linked from website-provisioner. Should be present from domain-provision-success"
+    },
+    "cloudfront_aws_id": {
+      "type": "string",
+      "description": "The Cloudfront aws-id"
     }
   }
 }
