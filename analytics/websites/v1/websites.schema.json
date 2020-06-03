@@ -19,7 +19,7 @@
         "gcs-copy-begin",
         "gcs-copy-success",
         "cdn-invalidate-cache-begin",
-        "cdn-invalidate-cache-end",
+        "cdn-invalidate-cache-success",
         "error"
       ],
       "description": "We are reusing a 'websites' topic and the messages are differentiated by 'event'"
