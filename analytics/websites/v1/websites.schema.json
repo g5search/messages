@@ -16,6 +16,7 @@
         "domain-provision-success",
         "gcs-copy-begin",
         "gcs-copy-success",
+        "gcs-copy-stale",
         "cdn-invalidate-cache-begin",
         "cdn-invalidate-cache-success",
         "error"
@@ -88,6 +89,10 @@
     "error_backtrace": {
       "type": "array",
       "description": "Backtrace of error, Present when error"
+    },
+    "info_message": {
+      "type": "string",
+      "description": "Free form text for providing information about the message"
     },
     "error_on_event": {
       "type": "string",
