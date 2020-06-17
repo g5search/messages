@@ -4,8 +4,8 @@
   "description": "Website Refresh Ready message",
   "required": [
     "deploy_id",
-    "domains",
-    "name",
+    "domain_names",
+    "cms_urn",
     "website_gcs_archive_uri",
     "revision",
     "deploy_timestamp"
@@ -15,7 +15,7 @@
       "type": "string",
       "description": "An ID that events can be grouped on"
     },
-    "name": {
+    "cns_urn": {
       "type": "string",
       "description": "When multi-domain, it's the website_urn. When single-domain, it's the client.website.urn"
     },
@@ -32,7 +32,7 @@
       "format": "date-time",
       "description": "Used to know if messages after repo-push-begin are out of order"
     },
-    "domains": {
+    "domain_names": {
       "type": "array",
       "description": "Domains linked from website-provisioner"
     }
