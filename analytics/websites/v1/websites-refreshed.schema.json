@@ -5,7 +5,7 @@
   "required": [
     "deploy_id",
     "pod_id",
-    "pod_status",
+    "refresh_status",
     "cms_urn"
   ],
   "properties": {
@@ -17,9 +17,10 @@
       "type": "string",
       "description": "Uniquely identifies POD. Probably region/pod-name"
     },
-    "pod_status": {
+    "refresh_status": {
       "type": "string",
-      "description": "Status of POD"
+      "enum" : ["completed", "failed", "skipped"],
+      "description": "Status of website refresh"
     },
     "cms_urn": {
       "type": "string",
