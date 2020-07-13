@@ -22,7 +22,7 @@
       "enum" : ["completed", "failed", "skipped"],
       "description": "Status of website refresh"
     },
-    "cms_urn": {
+    "website_clw": {
       "type": "string",
       "description": "When multi-domain, it's the website_urn. When single-domain, it's the client.website.urn"
     }
