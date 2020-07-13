@@ -4,7 +4,7 @@
   "description": "Blog events",
   "required": [
     "event",
-    "cms_urn",
+    "website_clw",
     "deploy_id",
     "repo_uri",
     "location_urn",
@@ -26,6 +26,10 @@
     "cms_urn": {
       "type": "string",
       "description": "When multi-domain, it's the website_urn. When single-domain, it's the client.website.urn"
+    },
+    "website_clw": {
+      "type": "string",
+      "description": "The website CLW"
     },
     "location_urn": {
       "type": "string"
