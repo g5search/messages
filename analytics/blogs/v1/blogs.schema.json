@@ -15,7 +15,8 @@
       "type": "string",
       "enum": [
         "blog-updated",
-        "blog-deleted"
+        "blog-deleted",
+        "blogs-updated-for-website-deploy"
       ],
       "description": "We are reusing a 'websites' topic and the messages are differentiated by 'event'"
     },
