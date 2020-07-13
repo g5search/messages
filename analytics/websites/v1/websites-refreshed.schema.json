@@ -6,7 +6,7 @@
     "deploy_id",
     "pod_id",
     "refresh_status",
-    "cms_urn"
+    "website_clw"
   ],
   "properties": {
     "deploy_id": {
