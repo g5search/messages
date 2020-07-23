@@ -14,6 +14,7 @@
         "repo-push-success",
         "domain-provision-begin",
         "domain-provision-success",
+        "continuing-website-publish",
         "gcs-copy-begin",
         "gcs-copy-success",
         "gcs-copy-stale",
@@ -22,6 +23,14 @@
         "error"
       ],
       "description": "We are reusing a 'websites' topic and the messages are differentiated by 'event'"
+    },
+    "continuing_webiste_publish_reason": {
+      "type": "string",
+      "enum": [
+        "nae-skipped",
+        "nae-timeout",
+        "nae-complete"
+      ]
     },
     "deploy_id": {
       "type": "string",
