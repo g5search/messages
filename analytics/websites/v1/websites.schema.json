@@ -24,7 +24,7 @@
       ],
       "description": "We are reusing a 'websites' topic and the messages are differentiated by 'event'"
     },
-    "continuing_webiste_publish_reason": {
+    "continuing_website_publish_reason": {
       "type": "string",
       "enum": [
         "nae-skipped",
