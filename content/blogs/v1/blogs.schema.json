@@ -1,0 +1,42 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/analytics/blogs/v1/blogs.schema.json",
+  "type": "object",
+  "description": "Blog events",
+  "required": [
+    "event",
+    "website_clw",
+    "deploy_id",
+    "repo_uri",
+    "location_urn",
+    "client_urn"
+  ],
+  "properties": {
+    "event": {
+      "type": "string",
+      "enum": [
+        "blog-updated",
+        "blog-deleted",
+        "blogs-updated-for-website-deploy"
+      ],
+      "description": "We are reusing a 'websites' topic and the messages are differentiated by 'event'"
+    },
+    "deploy_id": {
+      "type": "string",
+      "description": "An ID that events can be grouped on"
+    },
+    "website_clw": {
+      "type": "string",
+      "description": "The website CLW"
+    },
+    "location_urn": {
+      "type": "string"
+    },
+    "client_urn": {
+      "type": "string"
+    },
+    "repo_uri": {
+      "type": "string",
+      "description": "URI to the git repo"
+    }
+  }
+}
