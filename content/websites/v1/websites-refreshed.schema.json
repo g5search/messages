@@ -1,0 +1,30 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/analytics/websites/v1/websites-refreshed.schema.json",
+  "type": "object",
+  "description": "Website Refreshed message",
+  "required": [
+    "deploy_id",
+    "pod_id",
+    "refresh_status",
+    "website_clw"
+  ],
+  "properties": {
+    "deploy_id": {
+      "type": "string",
+      "description": "An ID that events can be grouped on"
+    },
+    "pod_id": {
+      "type": "string",
+      "description": "Uniquely identifies POD. Probably region/pod-name"
+    },
+    "refresh_status": {
+      "type": "string",
+      "enum" : ["completed", "failed", "skipped"],
+      "description": "Status of website refresh"
+    },
+    "website_clw": {
+      "type": "string",
+      "description": "When multi-domain, it's the website_urn. When single-domain, it's the client.website.urn"
+    }
+  }
+}
