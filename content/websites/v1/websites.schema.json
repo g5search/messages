@@ -10,6 +10,9 @@
     "event": {
       "type": "string",
       "enum": [
+        "publish-initiated",
+        "compile-begin",
+        "compile-end",
         "repo-push-begin",
         "repo-push-success",
         "domain-provision-begin",
