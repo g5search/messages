@@ -13,6 +13,7 @@
         "publish-initiated",
         "compile-begin",
         "compile-end",
+        "batched-with-another-publish",
         "repo-push-begin",
         "repo-push-success",
         "domain-provision-begin",
