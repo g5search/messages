@@ -1,0 +1,50 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/integrations/dashboard/v1/dashboard.schema.json",
+  "type": "object",
+  "description": "Location Settings",
+  "properties": {
+    "location_urn": {
+      "type": "string"
+    },
+    "urn": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "string"
+    },
+    "location_uid": {
+      "type": "string"
+    },
+    "client_uid": {
+      "type": "string"
+    },
+    "client_urn": {
+      "type": "string"
+    },
+    "client_name": {
+      "type": "string"
+    },
+    "location_name": {
+      "type": "string"
+    },
+    "location_code": {
+      "type": "string"
+    },
+    "settings": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "required": [
+    "location_urn",
+    "urn",
+    "uid",
+    "location_uid",
+    "client_uid",
+    "client_urn",
+    "client_name",
+    "location_name",
+    "location_code",
+    "settings"
+  ]
+}
