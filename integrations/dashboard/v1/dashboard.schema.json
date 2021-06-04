@@ -28,7 +28,10 @@
       "type": "string"
     },
     "location_code": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "settings": {
       "type": "object",
@@ -44,7 +47,6 @@
     "client_urn",
     "client_name",
     "location_name",
-    "location_code",
     "settings"
   ]
 }
