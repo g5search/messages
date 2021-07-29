@@ -36,6 +36,12 @@
     "settings": {
       "type": "object",
       "properties": {}
+    },
+    "location_urns_without_settings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": [
@@ -47,6 +53,7 @@
     "client_urn",
     "client_name",
     "location_name",
-    "settings"
+    "settings",
+    "location_urns_without_settings"
   ]
 }
