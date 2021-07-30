@@ -53,7 +53,6 @@
     "client_urn",
     "client_name",
     "location_name",
-    "settings",
-    "location_urns_without_settings"
+    "settings"
   ]
 }
