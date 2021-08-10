@@ -1,0 +1,6 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/integrations/vendor-leads/v1/lead-pick-list-request.schema.json",
+  "type": "object",
+  "description": "Lead Pick List Request",
+  "client_urn": { "type": "string" }
+}
