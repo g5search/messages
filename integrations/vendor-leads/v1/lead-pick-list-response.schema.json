@@ -1,22 +1,29 @@
 {
   "$id": "https://github.com/g5search/messages/blob/master/integrations/vendor-leads/v1/lead-pick-list-response.schema.json",
-  "type": "array",
-  "description": "Lead Pick List Response",
-  "items": [
-    {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "name": {
-          "type": "string"
+  "type": "object",
+  "properties": {
+    "lead_sources": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ]
         }
-      },
-      "required": [
-        "id",
-        "name"
       ]
     }
+  },
+  "required": [
+    "lead_sources"
   ]
 }
