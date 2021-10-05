@@ -32,16 +32,6 @@
         "string",
         "null"
       ]
-    },
-    "settings": {
-      "type": "object",
-      "properties": {}
-    },
-    "location_urns_without_settings": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
     }
   },
   "required": [
@@ -52,7 +42,6 @@
     "client_uid",
     "client_urn",
     "client_name",
-    "location_name",
-    "settings"
+    "location_name"
   ]
 }
