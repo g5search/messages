@@ -1,0 +1,41 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/integrations/dashboard/v1/dashboard-vendor.schema.json",
+  "type": "object",
+  "description": "Vendor",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "default_floorplan_image_url": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "array"
+    },
+    "settings": {
+      "type": "string"
+    },
+    "enable_logging": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "license",
+    "display_name",
+    "default_floorplan_image_url",
+    "categories",
+    "settings",
+    "enable_logging"
+  ]
+}
