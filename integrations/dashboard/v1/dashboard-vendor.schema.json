@@ -25,7 +25,7 @@
       "type": "object"
     },
     "enable_logging": {
-      "type": "string"
+      "type": "object"
     }
   },
   "required": [
