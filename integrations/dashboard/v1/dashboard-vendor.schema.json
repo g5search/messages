@@ -22,7 +22,7 @@
       "type": "array"
     },
     "settings": {
-      "type": "string"
+      "type": "object"
     },
     "enable_logging": {
       "type": "string"
