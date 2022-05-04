@@ -42,6 +42,8 @@
     "default_floorplan_image_url",
     "categories",
     "settings",
-    "enable_logging"
+    "enabled_etl_logging",
+    "enabled_vls_logging",
+    "enabled_vps_logging"
   ]
 }
