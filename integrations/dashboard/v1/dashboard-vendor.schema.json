@@ -24,8 +24,14 @@
     "settings": {
       "type": "object"
     },
-    "enable_logging": {
-      "type": "object"
+    "enabled_etl_logging": {
+      "type": "boolean"
+    },
+    "enabled_vls_logging": {
+      "type": "boolean"
+    },
+    "enabled_vps_logging": {
+      "type": "boolean"
     }
   },
   "required": [
