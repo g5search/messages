@@ -1,0 +1,6 @@
+{
+  "$id": "https://github.com/g5search/messages/blob/master/integrations/cls/v1/leads.schema.json",
+  "type": "object",
+  "description": "Leads",
+  "client_urn": { "type": "string" }
+}
