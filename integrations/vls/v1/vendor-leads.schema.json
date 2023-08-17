@@ -1,0 +1,7 @@
+{
+    "$id": "https://github.com/g5search/messages/blob/master/integrations/vls/v1/vendor-leads.schema.json",
+    "type": "object",
+    "description": "Vendor Leads",
+    "client_urn": { "type": "string" }
+  }
+  
